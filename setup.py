@@ -25,3 +25,6 @@ grid = [[j for j in range(rows)] for i in range(columns)]
 for i in range(rows):
     for j in range(columns):
         grid[i][j]=point(i,j)
+
+def distance(point1,point2):
+  return math.sqrt((point1.x - point2.x)**2 + (point1.y - point2.y)**2)
